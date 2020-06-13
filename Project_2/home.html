@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_1</title>
+</head>
+<body>
+    <style>
+        #title{
+            display: flex;
+            justify-content: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }#description{
+            display: flex;
+            justify-content: center;
+            font-size:17px;
+            color:black;
+            font-family: 'Arial Narrow Bold';
+        }
+        #survey-form{
+            display: flex;
+            flex-direction: column;
+            background-color: aquamarine;
+            color:white;
+            font-weight:1500;
+            font-family: monospace ;
+            font-size: 15px;
+            width:50%;
+            margin:auto;
+        }
+        #name-label{
+            margin:6px 15px 6px 15px;
+        }
+        #name{
+            margin:6px 15px 2px 15px;
+        }
+        #email-label{
+            margin:6px 15px 6px 15px;
+        }
+        #email{
+            margin:6px 15px 2px 15px;
+        }
+        #number-label{
+            margin:6px 15px 6px 15px;
+        }
+        #number{
+            margin:0px 15px 2px 15px;
+        }
+        #pp{
+            margin:6px 15px 6px 15px;
+            color:orange;
+            font-size:18px;
+            font-weight: 800;
+        }
+        #select1{
+            margin:0px 15px 6px 15px;
+        }
+        #radio1{
+            margin:6px 15px 0px 15px;
+        }
+        #radio2{
+            margin:0px 15px 0px 15px;
+        }
+        #radio3{
+            margin:0px 15px 6px 15px;
+        }
+        label{
+            font-weight:800;
+            font-size: 17px;
+        }
+    </style>
+    <h1 id="title">
+        Just A Thing Survey Form
+    </h1>
+    <p id="description">Please fill the form to understand your profile and strength</p>
+    <form id="survey-form" action="">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your Email">
+            <label id="number-label" for="phone">Phone number</label>
+            <input id="number" type="number" min="10" max="12" placeholder="Phone number">
+        <p id="pp">Select the role you have been offered </p>
+    <select name="" id="select1" class="dropdown">    
+        <option disabled="" selected="" value="none">Select current role</option>
+        <option value="Software Developer">Software Developer</option>
+        <option value="Web Developer">Web Developer</option>
+        <option value="Machine Learning">Machine Learning</option>
+        <option value="Programmer">Programmer</option>
+        <option value="System Engineer">System Engineer</option>
+    </select> 
+    <label id="radio1" for="r1">
+        <input id="r1" type="radio" name="radioo" value="Excellent"> Excellent
+    </label>
+    <label id="radio2" for="r2">
+        <input id="r2" type="radio" name="radioo" value="Good"> Good
+    </label>
+    <label id="radio3" for="r3">
+        <input id="r3" type="radio" name="radioo" value="Satisfactory"> Satisfactory
+    </label>
+    <p id="pp">Check one or more that apply</p>
+    <label >
+        <input id="pp" type="checkbox" value="Love Challenges" name="check"> Love Challenges
+    </label>
+    <label >
+        <input id="pp" type="checkbox" value="Know Typing" name="check"> Know Typing
+    </label>
+    <label >
+        <input id="pp" type="checkbox" value="Know Graphic Designing" name="check"> Know Graphic Designing
+    </label>
+    <label >
+        <input id="pp" type="checkbox" value="Content Designing" name="check"> Content Designing
+    </label>
+     <p id="pp">Comment down for any query</p>
+        <textarea name="comment" id="pp" cols="30" rows="10"></textarea>
+        <button type="submit" style="background-color:rgb(12, 31, 24);color:white;">Submit</button>
+    </form>
+</body>
+</html>

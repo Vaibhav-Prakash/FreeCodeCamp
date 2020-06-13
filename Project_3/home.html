@@ -1,0 +1,127 @@
+<!DOCTYPE>
+<html>
+ <head>
+   <title>Landing page</title>
+  </head>
+  <body>
+      <style>
+          #header{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin:auto;
+  position:fixed;
+}
+#header-img{
+  max-width:50px;
+  border-radius:50%;
+}
+#nav-bar{
+  margin:0;
+  padding:0;
+  position:fixed;
+  width:100%;
+  height:50px;
+  background-color:black;
+  margin-bottom:20px;
+}
+section{
+  width:60%;
+  text-align:justify;
+  padding:30px;
+  margin:auto;
+  font-family:monospace;
+}
+p{
+  margin:15px 30px 0px 30px;
+  font-size:15px;
+  line-height:25px;
+}
+h1{
+  color:orange;
+  font-size:30px;
+  font-weight:50000;
+}
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:50%;
+  margin:auto;
+  background-color:black;
+  color:yellow;
+  font-size:25px;
+  padding:10px;
+  font-family:monospace;
+}
+input{
+  margin:10px 10px 10px 10px;
+  color:black;
+  font-weight:500;
+  font-size:20px;
+}
+@media(max-width:300px){
+  iframe{
+    width:150px;
+    height:120px;
+  }
+}
+iframe{
+  margin-left:35%;
+  margin-right:25%;
+  margin-top:75px;
+  div{
+  }
+  float:right;
+  margin:0;
+  margin-right:120px;
+  height:50px;
+  padding:0;
+}
+div a{
+  margin:20px 20px 20px 20px;
+  padding:0;
+  color:yellow;
+  text-decoration:none;
+  line-height:50px;
+}
+      </style>
+    <header id="header">
+      <div>
+      <nav id="nav-bar">
+        <img src="https://www.freelogodesign.org/Content/img/logo-samples/bakary.png" alt="image" id="header-img">
+        <div><a class="nav-link"                href="#pro1">Product1</a><a                      class="nav-link"                  href="#pro2">Product2</a><a class="nav-link" href="#pro3">Product3</a></div>
+      </nav>
+      </div>
+    </header>
+     <iframe width="420" height="315" id="video"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+    <section id="pro1">
+      <h1>Uses of machine learning</h1>
+      <p>Today, machine learning is used in a wide range of applications. Perhaps one of the most well-known examples of machine learning in action is the recommendation engine that powers Facebook's News Feed.</p>
+      <p>Facebook uses machine learning to personalize how each member's feed is delivered. If a member frequently stops to read a particular group’s posts, the recommendation engine will start to show more of that group’s activity earlier in the feed.Behind the scenes, the engine is attempting to reinforce known patterns in the member’s online behavior. Should the member change patterns and fail to read posts from that group in the coming weeks, the News Feed will adjust accordingly.</p>
+    </section>
+    <section id="pro2">
+      <h1>Importance of Human Interpretable Machine Learning</h1>
+      <p>Explaining how a specific ML model works can be challenging when the model is complex. There are some vertical industries where data scientists have to use simple machine learning models because it’s important for the business to explain how each and every decision was made. This is especially true in industries with heavy compliance burdens like banking and insurance.</p>
+      <p>Complex models can accurate predictions, but explaining to a lay person how an output was determined can be difficult. </p>
+    </section>
+    <section id="pro3">
+      <h1>The future of machine learning</h1>
+     <p> Machine learning platforms are among enterprise technology's most competitive realms, with most major vendors, including Amazon, Google, Microsoft, IBM and others, racing to sign customers up for platform services that cover the spectrum of machine learning activities, including data collection, data preparation, data classification, model building, training and application deployment.</P>
+<p>
+As machine learning continues to increase in importance to business operations and AI becomes ever more practical in enterprise settings, the machine learning platform wars will only intensify.
+    </p>
+<p>
+Continued research into deep learning and AI is increasingly focused on developing more general applications. Today's AI models require extensive training in order to produce an algorithm that is highly optimized to perform one task. But some researchers are exploring ways to make models more flexible and are seeking techniques that allow a machine to apply context learned from one task to future, different tasks.
+    </p>
+    </section>
+    <form id="form" action=" https://www.freecodecamp.com/email-submit">
+      <label for="email">Enter email
+      </label>
+      <input id="email" type="email" name="email" placeholder="abc@gmail.com">
+      <input type="submit" id="submit" value="Submit">
+  </form>
+  </body>
+</html>
